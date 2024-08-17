@@ -67,9 +67,15 @@ Envision an MLP.
 ----------------------
 **Results**
 
+Predicted vs Actual Positions of Vehicles Using Different Models (Methods):
+
 ![Predicted vs Actual Positions of Vehicles Using Different Models (Methods)](Experiments/Final/)
 
+Comparison of episodic loss and wall-clock times:
+
 ![Comparison of episodic loss and wall-clock times](Graphs/loss-and-exec-time-over-epochs.svg)
+
+Comparison of RMSE, MAE, R2 Score, and Final Loss Value (based on MSE):
 
 ![Comparison of RMSE, MAE, R2 Score, and Final Loss Value (based on MSE)](Graphs/rmse-mae-r2score-finalloss-methods.svg)
 
