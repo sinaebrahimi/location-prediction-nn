@@ -69,7 +69,12 @@ Envision an MLP.
 
 Predicted vs Actual Positions of Vehicles Using Different Models (Methods):
 
-![Predicted vs Actual Positions of Vehicles Using Different Models (Methods)](Experiments/Final/)
+![Predicted vs Actual Positions of Vehicles Using Different Models (Methods)](Experiments/Final/all_vehicles_comparison.png)
+
+
+The trace of an exemplary vehicle (actual vs predicted positions):
+
+![Prediction of the trace for an exemplary vehicle](Experiments/Final/vehicle_3726_comparison.svg)
 
 Comparison of episodic loss and wall-clock times:
 
