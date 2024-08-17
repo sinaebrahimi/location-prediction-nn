@@ -62,7 +62,8 @@ This notebook is almost the same as the _2-Tuning_ANN_Location_Prediction.ipynb_
 
 Envision an MLP.
 
-![NN Architecture](Report/Latex Source/2024-08-08 - ANN - 7088CEM (Conf. Paper Format)/figures/architecture.svg)
+![NN Architecture](Report/Latex%20Source/2024-08-08%20-%20ANN%20-%207088CEM%20(Conf.%20Paper%20Format)/figures/architecture.svg)
+
 ----------------------
 **Results**
 
