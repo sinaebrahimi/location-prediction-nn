@@ -108,7 +108,10 @@ Envision an MLP.
 ---
 
 All rights reserved
+
 Sina Ebrahimi
+
 Coventry University
+
 August 2024
 
