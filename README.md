@@ -31,13 +31,19 @@ If you do not have access to IEEE DataPort, you can decompress '_sparse.zip_' fr
 In the third step, some columns would be removed from '_sparse.csv_', along with some other changes for easier data manipulation, to form '_preprocessed_sparse.csv_'. In the fourth step, we distinguish each vehicle by its own 'id' and create sequences for the vehicles. The created sequences would have 5 consective time steps of one vehicle (change 'sequence_length' from 5 to any length you want and reproduce results). In other words, each row in the created dataset would contain 'x', 'y', 'speed', and 'angle' of 5 time steps (from 5 rows of the '_preprocessed_sparse.csv_' file) for one vehicle as the features and two target values ('x' and 'y') that are the position of the vehicle at the 6th consecutive time step. This is an exemplary sequence:
 
 Features (x, y, speed, angle):
+
 [[ 501.37 1479.55    4.44  359.34]
+
 [ 501.11 1485.68    6.02  357.64]
+
 [ 500.76 1494.23    8.4   357.64]
+
 [ 500.34 1504.42   10.01  357.64]
+
 [ 499.83 1516.71   12.26  357.61]]
 
 Target (next x, y):
+
 [ 499.24 1530.83]
 
 The generated sequences would be stored in the file '_sequences_vehicle_ids.pkl_', which would be used as the dataset in the next steps. Generating these sequences typically last around 30 minutes (varies based on your CPU/GPU power). You can skip this (i.e., all preprocessing executions) by decompressing the '_sequences_vehicle_ids.zip_' file from the folder '_Data_'.
@@ -58,7 +64,7 @@ This notebook is almost the same as the _2-Tuning_ANN_Location_Prediction.ipynb_
 
 Here are the properties of the system used to develop and rn the experiments:
 
-* *Intel(R) Core(TM) i7-7820X **CPU** @ 3.60GHz
+* Intel(R) Core(TM) i7-7820X **CPU** @ 3.60GHz
 * 32 GB **RAM**
 * NVIDIA Quadro RTX 4000 **GPU** (Memory: 24 GB, Dedicated Memory: 8 GB)
 
