@@ -36,7 +36,6 @@ In the third step, some columns would be removed from '_sparse.csv_', along with
 
 [ 501.11 1485.68    6.02  357.64]]
 
-
 *Target (next x, y):*
 
 [ 500.76 1494.23]
@@ -99,6 +98,8 @@ Envision an MLP.
 #### Comparison of RMSE, MAE, R2 Score, and Final Loss Value (based on MSE):
 
 ![Comparison of RMSE, MAE, R2 Score, and Final Loss Value (based on MSE)](Graphs/rmse-mae-r2score-finalloss-methods.svg)
+
+
 
 ---
 
