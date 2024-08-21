@@ -69,7 +69,7 @@ Python 3.11.9 (on Windows 10; VS Code Jupyter extension) was used for developmen
 | torch        | 2.0.1+cu117    | pandas  | 2.2.2          |
 | scikit-learn | 1.5.1          | numpy   | 1.26.3         |
 
-Also, there is another requirements file available for Python 3.10.11 on linux.
+Also, there is another [requirements file](https://github.com/sinaebrahimi/location-prediction-nn/blob/main/requirements-linux-python-3.10.11.txt) available for Python 3.10.11 dependencies on linux.
 
 ---
 
