@@ -62,12 +62,14 @@ Here are the properties of the system used to develop and rn the experiments:
 * 32 GB **RAM**
 * NVIDIA Quadro RTX 4000 **GPU** (Memory: 24 GB, Dedicated Memory: 8 GB)
 
-Python 3.11.9 was used for development (but most probably any version higher than 3.7 should be alright). My system had CUDA 11.7 installed so PyTorch installation is not up-to-date because of that, but if you work with a hugher CUDA version, it should be fine using a higher PyTorch version. Important used libraries at the time of development are as follows (also see the file '*requirement.txt*' if you want to [create the virtual environment](https://stackoverflow.com/a/41799834)):
+Python 3.11.9 (on Windows 10; VS Code Jupyter extension) was used for development (but most probably any version higher than 3.7 should be alright). My system had CUDA 11.7 installed so PyTorch installation is not up-to-date because of that, but if you work with a hugher CUDA version, it should be fine using a higher PyTorch version. Important used libraries at the time of development are as follows (also see the file '*requirement.txt*' if you want to [create the virtual environment](https://stackoverflow.com/a/41799834)):
 
 | Library      | Version on pip | Library | Version on pip |
 | ------------ | -------------- | ------- | -------------- |
 | torch        | 2.0.1+cu117    | pandas  | 2.2.2          |
 | scikit-learn | 1.5.1          | numpy   | 1.26.3         |
+
+Also, there is another requirements file available for Python 3.10.11 on linux.
 
 ---
 
