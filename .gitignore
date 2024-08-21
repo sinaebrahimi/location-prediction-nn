@@ -2,5 +2,7 @@ Data/sequences_vehicle_ids.pkl
 Data/sparse.csv
 Data/preprocessed_sparse.csv
 Graphs/raw-actual-locations.svg
-Experiments/Backup (Old)/Handover Prediction (Obsolete)/output_sparse_linear_regression.csv
-Experiments/Backup (Old)/Predicting User's BS using Nearest Centroid Classifier (Obsolete)/centroid_preprocessed_data.csv
+Experiments/Final/all_vehicles_comparison.pdf
+Experiments/Backup/Handover Prediction (Obsolete)/output_sparse_linear_regression.csv
+Experiments/Backup/Handover Prediction (Obsolete)/output_sparse_linear_regression.7z
+Experiments/Backup/Predicting User's BS (Obsolete)/preprocessed_data.csv
