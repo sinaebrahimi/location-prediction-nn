@@ -28,25 +28,20 @@ If you have access to download IEEE DataPort datasets, you can download the ['Ve
 
 If you do not have access to IEEE DataPort, you can decompress '_sparse.zip_' from the folder '_Data_' to obtain '_sparse.csv_'. You can follow the preprocessing step by step in '_1-preprocessing.ipynb_' from the **second** cell if you do not have the XML file.
 
-In the third step, some columns would be removed from '_sparse.csv_', along with some other changes for easier data manipulation, to form '_preprocessed_sparse.csv_'. In the fourth step, we distinguish each vehicle by its own 'id' and create sequences for the vehicles. The created sequences would have 5 consective time steps of one vehicle (change 'sequence_length' from 5 to any length you want and reproduce results). In other words, each row in the created dataset would contain 'x', 'y', 'speed', and 'angle' of 5 time steps (from 5 rows of the '_preprocessed_sparse.csv_' file) for one vehicle as the features and two target values ('x' and 'y') that are the position of the vehicle at the 6th consecutive time step. This is an exemplary sequence:
+In the third step, some columns would be removed from '_sparse.csv_', along with some other changes for easier data manipulation, to form '_preprocessed_sparse.csv_'. In the fourth step, we distinguish each vehicle by its own 'id' and create sequences for the vehicles. The created sequences would have 5 consective time steps of one vehicle (change '*sequence_length*' from 2 to any length you want and reproduce results (also see the branch '*[sequence_five](https://github.com/sinaebrahimi/Location_Prediction_-ANN-7088CEM-Project-/tree/sequence_five)*' for the results when '*sequence_length=5*')). In other words, each row in the created dataset would contain 'x', 'y', 'speed', and 'angle' of 2 time steps (from 2 rows of the '_preprocessed_sparse.csv_' file) for one vehicle as the features and two target values ('x' and 'y') that are the position of the vehicle at the 3th consecutive time step. This is an exemplary sequence:
 
-Features (x, y, speed, angle):
+*Features (x, y, speed, angle):*
 
 [[ 501.37 1479.55    4.44  359.34]
 
-[ 501.11 1485.68    6.02  357.64]
+[ 501.11 1485.68    6.02  357.64]]
 
-[ 500.76 1494.23    8.4   357.64]
 
-[ 500.34 1504.42   10.01  357.64]
+*Target (next x, y):*
 
-[ 499.83 1516.71   12.26  357.61]]
+[ 500.76 1494.23]
 
-Target (next x, y):
-
-[ 499.24 1530.83]
-
-The generated sequences would be stored in the file '_sequences_vehicle_ids.pkl_', which would be used as the dataset in the next steps. Generating these sequences typically last around 30 minutes (varies based on your CPU/GPU power). You can skip this (i.e., all preprocessing executions) by decompressing the '_sequences_vehicle_ids.zip_' file from the folder '_Data_'.
+The variable '*sequence_length*' can affect the results. However, as we compared the lengths 2 and 5, the discrepency between the results is not huge. The generated sequences would be stored in the file '_sequences_vehicle_ids.pkl_', which would be used as the dataset in the next steps. Generating these sequences typically last around 30 minutes (varies based on your CPU/GPU power). You can skip this (i.e., all preprocessing executions) by decompressing the '_sequences_vehicle_ids.zip_' file from the folder '_Data_'.
 
 Step 2 in the notebooks '_2-Tuning_ANN_Location_Prediction.ipynb_' and '_3-Evaluation_of_Methods_Location_Prediction.ipynb_' also refers to preprocessing as they read the '_sequences_vehicle_ids.pkl_' file and create the 'VehicleDataset'. The train/test split is 80%-20%. Moreover, hyperparameter tuning is done on 20% of the data.
 
